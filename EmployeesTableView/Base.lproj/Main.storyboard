@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JKO-xo-Qkg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JKO-xo-Qkg">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +19,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstEmployePage" textLabel="a44-X1-wkJ" detailTextLabel="OOL-K7-RGd" style="IBUITableViewCellStyleValue2" id="iPf-il-T70">
-                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iPf-il-T70" id="uZj-8N-GLc">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -55,7 +56,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drj-kA-aaL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="3"/>
+            <point key="canvasLocation" x="1476" y="-587"/>
         </scene>
         <!--More Info View Controller-->
         <scene sceneID="gZJ-uf-3cB">
@@ -66,20 +67,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUd-Jl-Lke">
-                                <rect key="frame" x="16" y="75" width="195" height="30"/>
+                                <rect key="frame" x="16" y="231.5" width="288" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="NFk-h2-dBn"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="195" id="lrX-8N-hdB"/>
+                                    <constraint firstAttribute="height" constant="25" id="uAq-Zl-v4Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg1-QL-jeF">
-                                <rect key="frame" x="16" y="115" width="195" height="30"/>
+                                <rect key="frame" x="16" y="266.5" width="288" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="195" id="DMc-Rc-2ID"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="b7k-UV-DOT"/>
+                                    <constraint firstAttribute="height" constant="25" id="nar-R0-suE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -90,9 +89,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Eg1-QL-jeF" firstAttribute="top" secondItem="nUd-Jl-Lke" secondAttribute="bottom" constant="10" id="7aY-i1-FKj"/>
+                            <constraint firstItem="nUd-Jl-Lke" firstAttribute="centerY" secondItem="hGA-Ue-sTX" secondAttribute="centerY" constant="-40" id="8E9-aw-1JJ"/>
                             <constraint firstItem="nUd-Jl-Lke" firstAttribute="leading" secondItem="aU6-6y-onN" secondAttribute="leading" constant="16" id="Fx0-Eb-WmL"/>
                             <constraint firstItem="Eg1-QL-jeF" firstAttribute="leading" secondItem="aU6-6y-onN" secondAttribute="leading" constant="16" id="PGD-LZ-b4J"/>
-                            <constraint firstItem="nUd-Jl-Lke" firstAttribute="top" secondItem="hGA-Ue-sTX" secondAttribute="top" constant="75" id="iwk-nL-SLW"/>
+                            <constraint firstItem="nUd-Jl-Lke" firstAttribute="centerX" secondItem="hGA-Ue-sTX" secondAttribute="centerX" id="kQu-aZ-xaQ"/>
+                            <constraint firstItem="aU6-6y-onN" firstAttribute="trailing" secondItem="Eg1-QL-jeF" secondAttribute="trailing" constant="16" id="lgl-Cd-5cZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lSP-2f-fYm"/>
@@ -103,19 +104,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Em2-BG-u9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2291.25" y="2.112676056338028"/>
+            <point key="canvasLocation" x="2406" y="-587"/>
         </scene>
         <!--Second-->
         <scene sceneID="abs-bX-d9w">
             <objects>
-                <tableViewController id="ltz-bz-oXH" sceneMemberID="viewController">
+                <tableViewController id="ltz-bz-oXH" customClass="SecondListTV" customModule="EmployeesTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gL7-9V-RbY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="SecondEmployePage" textLabel="xBS-Jh-4ot" detailTextLabel="xsm-Wh-Cg8" style="IBUITableViewCellStyleSubtitle" id="SaO-6Q-Rjx">
-                                <rect key="frame" x="0.0" y="28" width="320" height="55.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SaO-6Q-Rjx" id="PZh-dI-IUy">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
@@ -149,24 +150,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uV4-uQ-LWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="804"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="QqE-3W-Ivt">
-            <objects>
-                <navigationController id="dL1-wf-3nl" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="BU3-b4-va6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ltz-bz-oXH" kind="relationship" relationship="rootViewController" id="SK2-7V-yWF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nPW-3N-ttG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="491" y="804"/>
+            <point key="canvasLocation" x="1476" y="314"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mgR-wc-ihs">
@@ -194,10 +178,11 @@
         <!--Persons List-->
         <scene sceneID="I45-TA-zio">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zkk-vb-gHx" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zkk-vb-gHx" customClass="TabBarViewController" customModule="EmployeesTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons List" id="uIA-a3-3BW"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hhi-EB-PLj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -211,9 +196,6 @@
             <point key="canvasLocation" x="493" y="5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="SK2-7V-yWF"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="mail.stack" catalog="system" width="128" height="122"/>
         <image name="person.crop.rectangle.fill" catalog="system" width="128" height="93"/>
@@ -222,9 +204,6 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3610B70E27886B2D005FDA81 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3610B70D27886B2D005FDA81 /* TabBarViewController.swift */; };
 		366F609E2626EF2300FC3B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F609D2626EF2300FC3B94 /* AppDelegate.swift */; };
 		366F60A02626EF2300FC3B94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F609F2626EF2300FC3B94 /* SceneDelegate.swift */; };
 		366F60A52626EF2300FC3B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366F60A32626EF2300FC3B94 /* Main.storyboard */; };
 		366F60A72626EF2600FC3B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366F60A62626EF2600FC3B94 /* Assets.xcassets */; };
-		366F60AA2626EF2600FC3B94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366F60A82626EF2600FC3B94 /* LaunchScreen.storyboard */; };
 		366F60B52626F5D000FC3B94 /* FirstListTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F60B42626F5D000FC3B94 /* FirstListTV.swift */; };
 		366F60C02627004D00FC3B94 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F60BF2627004D00FC3B94 /* Person.swift */; };
 		366F60C626271C3000FC3B94 /* SecondListTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F60C526271C3000FC3B94 /* SecondListTV.swift */; };
@@ -19,12 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3610B70D27886B2D005FDA81 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		366F609A2626EF2300FC3B94 /* EmployeesTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeesTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366F609D2626EF2300FC3B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366F609F2626EF2300FC3B94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		366F60A42626EF2300FC3B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		366F60A62626EF2600FC3B94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		366F60A92626EF2600FC3B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		366F60AB2626EF2600FC3B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		366F60B42626F5D000FC3B94 /* FirstListTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstListTV.swift; sourceTree = "<group>"; };
 		366F60BF2627004D00FC3B94 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -62,18 +62,34 @@
 		366F609C2626EF2300FC3B94 /* EmployeesTableView */ = {
 			isa = PBXGroup;
 			children = (
-				366F60BF2627004D00FC3B94 /* Person.swift */,
-				366F60B42626F5D000FC3B94 /* FirstListTV.swift */,
-				366F60C926283BAD00FC3B94 /* MoreInfoViewController.swift */,
-				366F60C526271C3000FC3B94 /* SecondListTV.swift */,
+				36CE444527848025002CA6E5 /* ViewControllers */,
+				36CE44442784801A002CA6E5 /* Model */,
 				366F60A32626EF2300FC3B94 /* Main.storyboard */,
 				366F609D2626EF2300FC3B94 /* AppDelegate.swift */,
 				366F609F2626EF2300FC3B94 /* SceneDelegate.swift */,
 				366F60A62626EF2600FC3B94 /* Assets.xcassets */,
-				366F60A82626EF2600FC3B94 /* LaunchScreen.storyboard */,
 				366F60AB2626EF2600FC3B94 /* Info.plist */,
 			);
 			path = EmployeesTableView;
+			sourceTree = "<group>";
+		};
+		36CE44442784801A002CA6E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				366F60BF2627004D00FC3B94 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36CE444527848025002CA6E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3610B70D27886B2D005FDA81 /* TabBarViewController.swift */,
+				366F60B42626F5D000FC3B94 /* FirstListTV.swift */,
+				366F60C926283BAD00FC3B94 /* MoreInfoViewController.swift */,
+				366F60C526271C3000FC3B94 /* SecondListTV.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				366F60AA2626EF2600FC3B94 /* LaunchScreen.storyboard in Resources */,
 				366F60A72626EF2600FC3B94 /* Assets.xcassets in Resources */,
 				366F60A52626EF2300FC3B94 /* Main.storyboard in Resources */,
 			);
@@ -150,6 +165,7 @@
 				366F60B52626F5D000FC3B94 /* FirstListTV.swift in Sources */,
 				366F609E2626EF2300FC3B94 /* AppDelegate.swift in Sources */,
 				366F60CA26283BAD00FC3B94 /* MoreInfoViewController.swift in Sources */,
+				3610B70E27886B2D005FDA81 /* TabBarViewController.swift in Sources */,
 				366F60C02627004D00FC3B94 /* Person.swift in Sources */,
 				366F60A02626EF2300FC3B94 /* SceneDelegate.swift in Sources */,
 			);
@@ -164,14 +180,6 @@
 				366F60A42626EF2300FC3B94 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		366F60A82626EF2600FC3B94 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				366F60A92626EF2600FC3B94 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,12 +307,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G6Q84AD3R;
 				INFOPLIST_FILE = EmployeesTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.Swiftbook.EmployeesTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = bySanShamor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -317,12 +326,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G6Q84AD3R;
 				INFOPLIST_FILE = EmployeesTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.Swiftbook.EmployeesTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = bySanShamor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
